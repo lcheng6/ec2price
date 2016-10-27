@@ -61,7 +61,7 @@
 </div>
 
 <div class="container">
-  <div id="chart">
+  <div id="chart1">
     <svg style="height: 500px;"></svg>
   </div>
 </div>
@@ -102,13 +102,13 @@ $(function() {
         .axisLabel('Price ($)')
         .tickFormat(d3.format('.03f'));
 
-    d3.select('#chart svg')
+    d3.select('#chart1 svg')
         .datum(prices())
         .transition().duration(500)
         .call(chart);
 
     nv.utils.windowResize(function () {
-      d3.select('#chart svg').call(chart);
+      d3.select('#chart1 svg').call(chart);
     });
 
     return chart;
