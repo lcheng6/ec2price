@@ -14,9 +14,9 @@ over time. It's written in [Python](http://www.python.org/) using the
 ## Instructions for running on Heroku
 
 ```bash
-$ git clone https://github.com/grosskur/ec2price.git
+$ git clone https://github.com/lcheng6/ec2price.git
 $ cd ec2price
-$ heroku create your-ec2price
+$ heroku create liang-ec2price
 $ heroku config:set TABLE_PREFIX=$(uuidgen | cut -c 1-8 | tr 'A-Z' 'a-z')
 $ heroku config:set COOKIE_SECRET=$(head /dev/urandom | base64 | cut -c 1-40)
 $ heroku config:set AWS_ACCESS_KEY_ID=...
