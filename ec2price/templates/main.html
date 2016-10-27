@@ -84,8 +84,8 @@
 function prices() {
   var result = [];
   $.each({{ data }}, function (api_name, i) {
-    //console.log(api_name);
-    //console.log(i);
+    console.log(api_name);
+    console.log(i);
     var values = [];
     $.each(i, function (index, j) {
       values.push({x: Date.parse(j[0]), y: j[1]});
